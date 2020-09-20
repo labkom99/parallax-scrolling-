@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Labkom99.com - Membuat Parallax Scrolling Dengan HTML CSS SVG Dan JQuery</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/labkom99.css">
+	<style class="cp-pen-styles">*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6d9d3;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header .overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9rem;
+  text-shadow: 25px -15px rgba(25, 42, 46, 0.04);
+  color: #142124;
+  mix-blend-mode: overlay;
+}
+header .overlay h1 span {
+  margin-top: -2em;
+  padding-top: 0.5em;
+  display: block;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+}
+header .parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .parallax div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header .parallax .one {
+  background-image: url("svg/labkom99-1.svg");
+  z-index: 4;
+}
+header .parallax .two {
+  background-image: url("svg/labkom99-2.svg");
+  z-index: 3;
+}
+header .parallax .three {
+  background-image: url("svg/labkom99-3.svg");
+  z-index: 2;
+}
+header .parallax .four {
+  background-image: url("svg/labkom99-4.svg");
+  z-index: 1;
+}
+header .parallax .five {
+  background-image: url("svg/labkom99-5.svg");
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  margin-bottom: 15vh;
+  padding: 2em 4em;
+  min-height: 85vh;
+  background-color: #e8f4f8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+main .container {
+  font-size: 1rem;
+  color: #192a2e;
+}
+main .container pre {
+  padding: 1em;
+  border-radius: 0.25em;
+  background-color: rgba(25, 42, 46, 0.05);
+}
+main .container a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 2px dashed;
+  color: #b7977b;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: flex;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #192a2e;
+  color: #c6d9d3;
+}
+footer a {
+  padding-bottom: .25em;
+  text-decoration: none;
+  border-bottom: 1px dashed #c6d9d3;
+  color: #c6d9d3;
+}
+</style>
+</head>
+<body>
+	<header>
+  <div class="overlay">
+    <div class="parallax">
+      <h1>labkom99<span>Membuat Parallax Scrolling</span></h1>
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+  	<div class="labkom99-header">
+		<h1>Membuat Parallax Scrolling Dengan HTML CSS SVG Dan JQuery <span> Labkom99.com & Parallax Scrolling</span></h1>
+		<div class="labkom99-links">
+			<a class="labkom99-icon icon-labkom99-home-outline" href="http://www.labkom99.com/" title="labkom99" target="_blank"><span> Labkom99</span></a>
+			<a class="labkom99-icon icon-labkom99-arrow-forward-outline" href="https://www.labkom99.com/2020/09/membuat-efek-background-lampu-neon.html" title="labkom99" target="_blank"><span> labkom99</span></a>
+		</div>
+	</div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><a href="https://www.labkom99.com/search/label/HTML" target="blank"> Tuliskan Script Dibawah ini</a>
+    <pre>wrapper { 
+  background-color: ... ;
+}
+ 
+text { 
+  color: ... ;
+  mix-blend-mode: ... ; 
+}</pre>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    <p>Tempore placeat veritatis ad excepturi, quasi, consequatur fuga. Corporis suscipit at aut quaerat nostrum maxime amet ipsum illo qui. Voluptate aperiam nostrum natus voluptatem modi, hic aliquid tempora quisquam, itaque.</p>
+  </div>
+  <div class="related">
+		    <h3> Membuat Efek Animasi Dengan HTML Dan Css:</h3>
+            <a href="https://www.labkom99.com/2020/08/membuat-efek-gelombang-pada-teks.html" target="_blank" >
+			  <img src="related/Membuat Efek Gelombang Pada Teks Menggunakan Clip-Path HTML Dan CSS3.jpg" width="300" alt="Membuat Efek Gelombang Pada Teks Menggunakan Clip-Path HTML Dan CSS3"/>
+			  <h3>Membuat Efek Gelombang Pada Teks Menggunakan Clip-Path HTML Dan CSS3</h3>
+			</a>
+		    <a href="https://www.labkom99.com/2020/09/membuat-animasi-teks-dengan-html5-dan.html" target="_blank" >
+			  <img src="related/Membuat Animasi Teks Dengan HTML5 Dan Canvas.jpg" width="300" alt="Membuat Animasi Teks Dengan HTML5 Dan Canvas"/>
+			  <h3>Membuat Animasi Teks Dengan HTML5 Dan Canvas</h3>
+			</a>
+			<a href="https://www.labkom99.com/2020/08/membuat-efek-animasi-lampu-neon-pada.html" target="_blank">
+			  <img src="related/Membuat Efek Animasi Lampu Neon Pada Tesk Dengan HTML Dan CSS3.jpg" width="300" alt="Membuat Efek Animasi Lampu Neon Pada Tesk Dengan HTML Dan CSS3"/>
+			  <h3>Membuat Efek Animasi Lampu Neon Pada Tesk Dengan HTML Dan CSS3</h3>
+			</a>
+		</div>
+</main>
+<footer>
+    <p>Copyright @ 2020 | Labkom99.com</p>  
+</footer>
+
+
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script>
+		$(window).scroll(function () {
+		  const
+		  a = $(this).scrollTop(),
+		  b = 800;
+		  $("h1").css({
+		    backgroundPosition: "center " + a / 2 + "px" });
+
+		  $(".parallax").css({
+		    top: a / 1.6 + "px",
+		    opacity: 1 - a / b });
+
+		});
+
+		// parallax scrolling
+
+		document.addEventListener("scroll", () => {
+		  const
+		  top = window.pageYOffset,
+		  one = document.querySelector(".one"),
+		  two = document.querySelector(".two"),
+		  three = document.querySelector(".three"),
+		  four = document.querySelector(".four"),
+		  five = document.querySelector(".five");
+
+		  one.style.bottom = -(top * 0.1) + "px";
+		  two.style.bottom = -(top * 0.2) + "px";
+		  three.style.bottom = -(top * 0.3) + "px";
+		  four.style.bottom = -(top * 0.4) + "px";
+		  five.style.bottom = -(top * 0.5) + "px";
+		});
+
+	</script>
+</body>
+</html>
+
